@@ -6,6 +6,9 @@ let jumpStrength = 550;
 let world;
 let level;
 
+let touchLeft = false;
+let touchRight = false;
+
 
 function setup() {
     createCanvas(930, 700);
@@ -28,6 +31,8 @@ function setup() {
     world.addMovingDoor(level.movingDoors);
 
     world.addPlayer(player);
+
+    createTouchControls();
 }
 
 function draw() {
