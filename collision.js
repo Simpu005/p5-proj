@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 function detectCollision(rectA, rectB) {
     let AisToTheRightOfB = (rectA.pos.x - rectA.w / 2) >= (rectB.pos.x + rectB.w / 2);
     let AisToTheLeftOfB = (rectA.pos.x + rectA.w / 2) <= (rectB.pos.x - rectB.w / 2);
@@ -48,8 +46,6 @@ function resolveCollision(rectA, rectB) {
 
     return collisionInfo;
 }
-=======
-
 function detectCollision(rectA, rectB) {
     let AisToTheRightOfB = (rectA.pos.x - rectA.w / 2) >= (rectB.pos.x + rectB.w / 2);
     let AisToTheLeftOfB = (rectA.pos.x + rectA.w / 2) <= (rectB.pos.x - rectB.w / 2);
@@ -98,4 +94,3 @@ function resolveCollision(rectA, rectB) {
 
     return collisionInfo;
 }
->>>>>>> 98b3e8fc83d562139567f2725510c352295b9ed5
